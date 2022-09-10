@@ -1,0 +1,120 @@
+:root {
+    --primario: #0984e3;
+    --secundario: #12202f;
+    --blanco: #ffffff;
+}
+
+/* Principales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    margin: 0px;
+}
+
+/* Utilidades */
+.contenedor {
+    max-width: 100%;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.boton {
+    margin-top: 1rem;
+    background-color: var(--primario);
+    border: none;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    color: var(--blanco);
+    border-radius: 4px;
+}
+
+/* TITULO */
+header .titulo {
+    text-align: center;
+
+}
+
+.titulo span {
+    color: var(--primario);
+    border-bottom: 2px solid var(--primario);
+}
+
+
+/* NAV */
+.nav-bg {
+    background-color: var(--primario);
+
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+    .navegacion-principal {
+        flex-direction: row;
+    }
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem 4.5rem;
+    transition: background-color ease 300ms;
+    text-align: center;
+
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--secundario)
+}
+
+/* hero */
+.hero {
+    height: 300px;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenido-hero {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 29, 44, 0.838);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-hero h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+
+}
+
+.ubicacion {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ubicacion p {
+    color: var(--blanco);
+}
